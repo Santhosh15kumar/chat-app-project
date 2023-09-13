@@ -12,7 +12,7 @@ class dataController {
           return res.status(200).send(mydata);
         }catch(err) {
             console.log('Error@getUserData', err);
-            return res.status(400).json({ msg: err.message});
+            return res.status(400).json({ message: "Something went wrong please try again later"});
         }
     }
 
